@@ -5,7 +5,9 @@
  */
 
 // Express 기본 모듈 불러오기
-
+const express = require('express');
+const http = require('http'); 
+const path = require('path');
 
 // Express의 미들웨어 불러오기
 const bodyParser = require('body-parser');
@@ -14,6 +16,7 @@ const static = require('serve-static');
 const expressErrorHandler = require('express-error-handler');
 const fs = require('fs');
 
+const app = express();
 // 포트 설정
 app.set('port', process.env.PORT || 3000);
 
@@ -22,9 +25,10 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
  
 // public 폴더를 static으로 오픈
+app.use('/public', static(path.join(__dirname, 'public')));
 
 // 라우팅 함수 등록
-
+const router = express.Router();
 
 // 메모 저장을 위한 라우팅 함수
 router.route('/process/save').post( (req, res) => {

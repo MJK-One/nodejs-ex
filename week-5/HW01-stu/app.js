@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
 
-const hostanme = '127.0.0.1';
+const hostname = '127.0.0.1';
 const port = 3000;
 
-const users = require('./routes/user.js');
+const users = require('./routes/users.js');
 const boards = require('./routes/boards.js');
 
 app.use('/users', users);
