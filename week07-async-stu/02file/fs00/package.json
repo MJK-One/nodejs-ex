@@ -1,0 +1,18 @@
+{
+  "name": "express-ex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {},
+  "description": "// ./fs/readme.txt\r 파일내용을 읽어주세요"
+}
