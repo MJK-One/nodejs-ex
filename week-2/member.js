@@ -4,7 +4,7 @@ const member = {
     address : '부산'
 }
 
-let {name, age} = memeber;
+let {name, age} = member;
 
 console.log(name);
 console.log(age);

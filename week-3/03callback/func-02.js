@@ -1,12 +1,12 @@
-// let varB = function funcB() {
-//     console.log("funcB");
-// }
-
-
-let varB = function () {
-console.log("funcB");
+let varB = function funcB() {
+    console.log("funcB");
 }
 
-// varB();
-funcB();
+
+// let varB = function () {
+// console.log("funcB");
+// }
+
+varB();
+// funcB();
 console.log(varB);

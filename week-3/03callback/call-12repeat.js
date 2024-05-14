@@ -1,7 +1,16 @@
-function repeat(count) {
-    for(let idx=1; idx<=count; idx++) {
-        console.log(idx* 2);
-    }
+// function repeat(count) {
+//     for(let idx=1; idx<=count; idx++) {
+//         console.log(idx* 2);
+//     }
+// }
+
+// repeat(5);
+
+var repeat = (count, callback) => {
+    for(let idx=1; idx<=count; idx++)
+        callback(idx * 2);
 }
 
-repeat(5);
+repeat(5, (idx) => {
+    console.log(idx)
+});
